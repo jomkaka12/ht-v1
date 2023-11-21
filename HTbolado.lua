@@ -222,6 +222,13 @@ Tab:AddButton({
     end
 })
 
+Tab:AddButton({
+    Name = "Hitbox Expander",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/jomkaka12/ht-v1/main/hexpander.lua'),true))()
+    end
+})
+
 
 
 
