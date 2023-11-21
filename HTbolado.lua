@@ -202,6 +202,27 @@ Tab:AddButton({
     end
 })
 
+local Tab = Window:MakeTab({
+    Name = "Funcoes",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "TP players",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Teleport%20Gui.lua'))()
+    end
+})
+
+Tab:AddButton({
+    Name = "ESP",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/jomkaka12/ht-v1/main/esp.lua'),true))()
+    end
+})
+
+
+
 
 OrionLib:Init()
-
