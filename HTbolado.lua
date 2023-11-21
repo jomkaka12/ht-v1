@@ -63,7 +63,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Server Hop",
+    Name = "Server Hope",
     Callback = function()
         loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
     end
