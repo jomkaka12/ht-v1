@@ -63,7 +63,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Hitman",
+    Name = "Hitman Club",
     Callback = function()
         teleportPlayer(-457, 2, -324)
     end
