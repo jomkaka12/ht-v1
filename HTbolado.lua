@@ -63,6 +63,13 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
+    Name = "Hitman",
+    Callback = function()
+        teleportPlayer(-457, 2, -324)
+    end
+})
+
+Tab:AddButton({
     Name = "Server Hope",
     Callback = function()
         loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
