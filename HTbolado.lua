@@ -63,7 +63,7 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-    Name = "Entregar Maleta",
+    Name = "Server Hop",
     Callback = function()
         loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
     end
