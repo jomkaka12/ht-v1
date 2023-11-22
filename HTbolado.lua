@@ -1,6 +1,13 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Hard Time Da Pesada", HidePremium = false, SaveConfig = false, ConfigFolder = "hardtimebolado"})
 
+OrionLib:MakeNotification({
+	Name = "É O VERMELHAO NA AREA",
+	Content = "Billy comendo as cadelas das mães de voces",
+	Image = "rbxassetid://13936847767",
+	Time = 7
+})
+
 local Tab = Window:MakeTab({
     Name = "Teleportes",
     Icon = "rbxassetid://4483345998",
@@ -236,7 +243,65 @@ Tab:AddButton({
     end
 })
 
+Tab:AddButton({
+    Name = "FLY",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/jomkaka12/ht-v1/main/Fly.lua'),true))()
+    end
+})
 
+Tab:AddButton({
+    Name = "Speed Hack",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/jomkaka12/ht-v1/main/SH.lua'),true))()
+    end
+})
 
+local Tab = Window:MakeTab({
+    Name = "TP armas",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
 
+Tab:AddButton({
+    Name = "Colete 4",
+    Callback = function()
+        teleportPlayer(-71, 4, -73)
+    end
+})
+
+Tab:AddButton({
+    Name = "Armory Banco",
+    Callback = function()
+        teleportPlayer(-613, 2, -85)
+    end
+})
+
+Tab:AddButton({
+    Name = "Armory Cassino",
+    Callback = function()
+        teleportPlayer(-1177, 2, -458)
+    end
+})
+
+Tab:AddButton({
+    Name = "Draco",
+    Callback = function()
+        teleportPlayer(-1320, 2, -931)
+    end
+})
+
+Tab:AddButton({
+    Name = "Sawn Off",
+    Callback = function()
+        teleportPlayer(-858, 2, -1012)
+    end
+})
+
+Tab:AddButton({
+    Name = "Revolver",
+    Callback = function()
+        teleportPlayer(-789, 2, -407)
+    end
+})
 OrionLib:Init()
