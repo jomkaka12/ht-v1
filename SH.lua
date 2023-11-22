@@ -57,7 +57,7 @@ t:SetTooltip("toggles speedhacks")
 s:SetTooltip("speedhack speed")
 
 m:NewLabel()
-m:NewLabel('made by topit')
+m:NewLabel('made by BILLY 25CM')
 
 s.OnValueChanged:Connect(function(v) 
     speed_amnt = v
